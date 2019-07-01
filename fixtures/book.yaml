@@ -1,0 +1,9 @@
+App\Entity\Book:
+  book_{1..10}:
+    name: book_name_<current()>
+    publisher: <sentence(5)>
+    author: <name()>
+    genre: '50%? fantasy : drama'
+    publishYear: <numberBetween(1900, 2019)>
+    words: <numberBetween(10000, 100000)>
+    price: <numberBetween(1, 500)>
